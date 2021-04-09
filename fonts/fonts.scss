@@ -1,0 +1,24 @@
+// @font-face {
+//   font-family: Astroneer; /* Имя шрифта */
+//   src: url(../fonts/NDAstroneer-Regular.ttf); /* Путь к файлу со шрифтом */
+// }
+
+@font-face {
+  font-family: Text; /* Имя шрифта */
+  src: url(../fonts/din1451alt.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Manteka; /* Имя шрифта */
+  src: url(../fonts/manteka.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: 'Century Gothic Italic';
+  src: url('../fonts/CenturyGothic-Italic.eot');
+  src: url('../fonts/CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CenturyGothic-Italic.woff') format('woff'),
+    url('../fonts/CenturyGothic-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

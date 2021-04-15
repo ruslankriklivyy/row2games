@@ -24,8 +24,15 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
       rel="stylesheet"
     />
+    <link href="http://fonts.cdnfonts.com/css/manteka" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" />
     <link href="css/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/slick.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
@@ -34,10 +41,25 @@
     <header class="header">
       <div class="container container--header">
         <div class="header__inner">
-          <h2 class="header__title">Row<span>2</span>Games</h2>
-          <nav class="header__nav"></nav>
-          <nav class="header__burger">
-            <a class="opener" href="#"><span></span></a>
+          <h1 class="header__title">Row<span>2</span>Games</h1>
+          <div class="menu-burger__header">
+            <span></span>
+          </div>
+          <nav class="header__nav">
+            <ul>
+              <li class="home" data-scroll="#home">
+                <a href="#home">Home</a>
+              </li>
+              <li class="about" data-scroll="#about">
+                <a href="#about">About</a>
+              </li>
+              <li class="team" data-scroll="#team">
+                <a href="#team">Team</a>
+              </li>
+              <li class="contact" data-scroll="#contact">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
@@ -109,49 +131,57 @@
 
     <div class="slider">
       <div class="slider-item">
-        <section class="promo" id="home">
+        <section class="promo" data-index="#1" data-section="home" id="home">
           <div class="container">
             <div class="promo__wrapper"></div>
             <div class="promo__box">
-              <div class="promo__title fade-right">Settle Down</div>
-              <p class="promo__text">
-                is third-person retrofuturism and a sea of action is third-person retrofuturism and
-                a
-              </p>
-              <a href="#gameplay" class="btn btn--promo">Watch gameplay</a>
-              <div id="gameplay" class="mfp-hide popup">
-                <div class="trailer">
-                  <iframe
-                    width="1536"
-                    height="722"
-                    src="https://www.youtube.com/embed/UCNv6HVajiU"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+              <div
+                class="promo__box-wrapper wow animate__animated animate__fadeInLeft"
+                data-wow-duration="1s"
+              >
+                <h2 class="promo__title">Settle Down</h2>
+                <p class="promo__text">
+                  is third-person retrofuturism and a sea of action is third-person retrofuturism
+                  and a
+                </p>
+                <a href="#gameplay" class="btn btn--promo">Watch gameplay</a>
+                <div id="gameplay" class="mfp-hide popup">
+                  <div class="trailer">
+                    <iframe
+                      width="1536"
+                      height="722"
+                      src="https://www.youtube.com/embed/UCNv6HVajiU"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
-              </div>
-              <a href="#settledown" class="btn btn--more">All info the game</a>
-              <div id="settledown" class="mfp-hide popup">
-                <div class="info">
-                  <p class="info-text">
-                    Hi, my name is "Name." Last night I met two guys who asked me to to write me a
-                    short review of the game, and they shoved me an awful crumpled hundred dollar
-                    bill with their number on it and shouted as they ran away that I could write
-                    anything anything. I asked them over the phone what the game is, and all I got
-                    was, and I quote: "Kind of like a first-person action, retrofuturistic, space, a
-                    fucking revolver, planet with reptiloids, (indecipherable sounds) khulh,
-                    non-variability, intergalactic colonies, sex, drugs and SLOOMOOO." I couldn't
-                    get this nonsense together in my head, so maybe someone else can do it. I'm
-                    writing this, stupidly, because I'm kind of embarrassed not to do something when
-                    I'm even if it's against my will. And since I can write whatever I want. they'll
-                    probably cut out everything else. Jesus, what the fuck am I doing with my life,
-                    tomorrow. I'm definitely going to look for a job tomorrow.
-                  </p>
+                <a href="#settledown" class="btn btn--more">All info the game</a>
+                <div id="settledown" class="mfp-hide popup">
+                  <div class="info">
+                    <p class="info-text">
+                      Hi, my name is "Name." Last night I met two guys who asked me to to write me a
+                      short review of the game, and they shoved me an awful crumpled hundred dollar
+                      bill with their number on it and shouted as they ran away that I could write
+                      anything anything. I asked them over the phone what the game is, and all I got
+                      was, and I quote: "Kind of like a first-person action, retrofuturistic, space,
+                      a fucking revolver, planet with reptiloids, (indecipherable sounds) khulh,
+                      non-variability, intergalactic colonies, sex, drugs and SLOOMOOO." I couldn't
+                      get this nonsense together in my head, so maybe someone else can do it. I'm
+                      writing this, stupidly, because I'm kind of embarrassed not to do something
+                      when I'm even if it's against my will. And since I can write whatever I want.
+                      they'll probably cut out everything else. Jesus, what the fuck am I doing with
+                      my life, tomorrow. I'm definitely going to look for a job tomorrow.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="promo-right">
+            <div
+              class="promo-right wow animate__animated animate__fadeInRight"
+              data-wow-duration="1s"
+            >
               <img src="./images/game-screen-2.png" alt="game png" />
             </div>
             <div class="promo__social">
@@ -169,36 +199,44 @@
         </section>
       </div>
       <div class="slider-item">
-        <section class="promo" id="about">
+        <section class="promo" data-index="#2" data-section="about" id="about">
           <div class="container">
             <div class="promo__wrapper"></div>
-            <div class="promo__box fade-right">
-              <div class="promo__title">About</div>
-              <p class="promo__text">
-                is third-person retrofuturism and a sea of action is third-person retrofuturism and
-                a
-              </p>
-              <a href="#about-us" class="btn btn--promo">More Info About Us</a>
-              <div id="about-us" class="mfp-hide popup">
-                <div class="info">
-                  <p class="info-text">
-                    Hi, my name is "Name." Last night I met two guys who asked me to to write me a
-                    short review of the game, and they shoved me an awful crumpled hundred dollar
-                    bill with their number on it and shouted as they ran away that I could write
-                    anything anything. I asked them over the phone what the game is, and all I got
-                    was, and I quote: "Kind of like a first-person action, retrofuturistic, space, a
-                    fucking revolver, planet with reptiloids, (indecipherable sounds) khulh,
-                    non-variability, intergalactic colonies, sex, drugs and SLOOMOOO." I couldn't
-                    get this nonsense together in my head, so maybe someone else can do it. I'm
-                    writing this, stupidly, because I'm kind of embarrassed not to do something when
-                    I'm even if it's against my will. And since I can write whatever I want. they'll
-                    probably cut out everything else. Jesus, what the fuck am I doing with my life,
-                    tomorrow. I'm definitely going to look for a job tomorrow.
-                  </p>
+            <div class="promo__box">
+              <div
+                class="promo__box-wrapper wow animate__animated animate__fadeInLeft"
+                data-wow-duration="1s"
+              >
+                <h2 class="promo__title">About</h2>
+                <p class="promo__text">
+                  is third-person retrofuturism and a sea of action is third-person retrofuturism
+                  and a
+                </p>
+                <a href="#about-us" class="btn btn--promo">More Info About Us</a>
+                <div id="about-us" class="mfp-hide popup">
+                  <div class="info">
+                    <p class="info-text">
+                      Hi, my name is "Name." Last night I met two guys who asked me to to write me a
+                      short review of the game, and they shoved me an awful crumpled hundred dollar
+                      bill with their number on it and shouted as they ran away that I could write
+                      anything anything. I asked them over the phone what the game is, and all I got
+                      was, and I quote: "Kind of like a first-person action, retrofuturistic, space,
+                      a fucking revolver, planet with reptiloids, (indecipherable sounds) khulh,
+                      non-variability, intergalactic colonies, sex, drugs and SLOOMOOO." I couldn't
+                      get this nonsense together in my head, so maybe someone else can do it. I'm
+                      writing this, stupidly, because I'm kind of embarrassed not to do something
+                      when I'm even if it's against my will. And since I can write whatever I want.
+                      they'll probably cut out everything else. Jesus, what the fuck am I doing with
+                      my life, tomorrow. I'm definitely going to look for a job tomorrow.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="promo-right">
+            <div
+              class="promo-right wow animate__animated animate__fadeInRight"
+              data-wow-duration="1s"
+            >
               <img src="./images/game-screen-2.png" alt="game png" />
             </div>
             <div class="promo__social">
@@ -216,69 +254,77 @@
         </section>
       </div>
       <div class="slider-item">
-        <section class="promo" id="team">
+        <section class="promo" data-index="#3" data-section="team" id="team">
           <div class="container">
             <div class="promo__wrapper"></div>
             <div class="promo__box">
-              <div class="promo__title">Team</div>
-              <p class="promo__text">
-                is third-person retrofuturism and a sea of action is third-person retrofuturism and
-                a
-              </p>
-              <a href="#team-info" class="btn btn--promo">More Info OUR Team</a>
-              <div id="team-info" class="mfp-hide popup">
-                <div class="info">
-                  <h2 class="popup-title">Team</h2>
-                  <div class="team-info">
-                    <div class="team-info-item">
-                      <img src="./images/worker-2.png" alt="worker img" />
-                      <h4>Edward Tsys</h4>
-                      <span>CEO</span>
-                      <p class="team-info-text">is third-person retrofuturism and</p>
-                      <nav class="team-info-social">
-                        <a href="/"> <img src="./images/vk.svg" alt="vk img" /></a>
-                        <a href="/"> <img src="./images/facebook.svg" alt="facebook img" /></a>
-                        <a href="/"> <img src="./images/instagram.svg" alt="instagram img" /></a>
-                      </nav>
-                    </div>
-                    <div class="team-info-item">
-                      <img src="./images/worker-3.png" alt="worker img" />
-                      <h4>Ruslan Kriklivyy</h4>
-                      <span>CEO</span>
-                      <p class="team-info-text">is third-person retrofuturism and</p>
-                      <nav class="team-info-social">
-                        <a href="/"> <img src="./images/vk.svg" alt="vk img" /></a>
-                        <a href="/"> <img src="./images/facebook.svg" alt="facebook img" /></a>
-                        <a href="/"> <img src="./images/instagram.svg" alt="instagram img" /></a>
-                      </nav>
-                    </div>
-                    <div class="team-info-item">
-                      <img src="./images/IGOR.png" alt="worker img" />
-                      <h4>Igor Oparenko</h4>
-                      <span>CEO</span>
-                      <p class="team-info-text">is third-person retrofuturism and</p>
-                      <nav class="team-info-social">
-                        <a href="/"> <img src="./images/vk.svg" alt="vk img" /></a>
-                        <a href="/"> <img src="./images/facebook.svg" alt="facebook img" /></a>
-                        <a href="/"> <img src="./images/instagram.svg" alt="instagram img" /></a>
-                      </nav>
-                    </div>
-                    <div class="team-info-item">
-                      <img src="./images/worker-5.png" alt="worker img" />
-                      <h4>Sophie Kriklivyy</h4>
-                      <span>CEO</span>
-                      <p class="team-info-text">is third-person retrofuturism and</p>
-                      <nav class="team-info-social">
-                        <a href="/"> <img src="./images/vk.svg" alt="vk img" /></a>
-                        <a href="/"> <img src="./images/facebook.svg" alt="facebook img" /></a>
-                        <a href="/"> <img src="./images/instagram.svg" alt="instagram img" /></a>
-                      </nav>
+              <div
+                class="promo__box-wrapper wow animate__animated animate__fadeInLeft"
+                data-wow-duration="1s"
+              >
+                <h2 class="promo__title">Team</h2>
+                <p class="promo__text">
+                  is third-person retrofuturism and a sea of action is third-person retrofuturism
+                  and a
+                </p>
+                <a href="#team-info" class="btn btn--promo">More Info OUR Team</a>
+                <div id="team-info" class="mfp-hide popup">
+                  <div class="info">
+                    <h2 class="popup-title">Team</h2>
+                    <div class="team-info">
+                      <div class="team-info-item">
+                        <img src="./images/worker-2.png" alt="worker img" />
+                        <h4>Edward Tsys</h4>
+                        <span>CEO</span>
+                        <p class="team-info-text">is third-person retrofuturism and</p>
+                        <nav class="team-info-social">
+                          <a href="/"> <img src="./images/vk.svg" alt="vk img" /></a>
+                          <a href="/"> <img src="./images/facebook.svg" alt="facebook img" /></a>
+                          <a href="/"> <img src="./images/instagram.svg" alt="instagram img" /></a>
+                        </nav>
+                      </div>
+                      <div class="team-info-item">
+                        <img src="./images/worker-3.png" alt="worker img" />
+                        <h4>Ruslan Kriklivyy</h4>
+                        <span>CEO</span>
+                        <p class="team-info-text">is third-person retrofuturism and</p>
+                        <nav class="team-info-social">
+                          <a href="/"> <img src="./images/vk.svg" alt="vk img" /></a>
+                          <a href="/"> <img src="./images/facebook.svg" alt="facebook img" /></a>
+                          <a href="/"> <img src="./images/instagram.svg" alt="instagram img" /></a>
+                        </nav>
+                      </div>
+                      <div class="team-info-item">
+                        <img src="./images/IGOR.png" alt="worker img" />
+                        <h4>Igor Oparenko</h4>
+                        <span>CEO</span>
+                        <p class="team-info-text">is third-person retrofuturism and</p>
+                        <nav class="team-info-social">
+                          <a href="/"> <img src="./images/vk.svg" alt="vk img" /></a>
+                          <a href="/"> <img src="./images/facebook.svg" alt="facebook img" /></a>
+                          <a href="/"> <img src="./images/instagram.svg" alt="instagram img" /></a>
+                        </nav>
+                      </div>
+                      <div class="team-info-item">
+                        <img src="./images/worker-5.png" alt="worker img" />
+                        <h4>Sophie Kriklivyy</h4>
+                        <span>CEO</span>
+                        <p class="team-info-text">is third-person retrofuturism and</p>
+                        <nav class="team-info-social">
+                          <a href="/"> <img src="./images/vk.svg" alt="vk img" /></a>
+                          <a href="/"> <img src="./images/facebook.svg" alt="facebook img" /></a>
+                          <a href="/"> <img src="./images/instagram.svg" alt="instagram img" /></a>
+                        </nav>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="promo-right">
+            <div
+              class="promo-right wow animate__animated animate__fadeInRight"
+              data-wow-duration="1s"
+            >
               <img src="./images/game-screen-2.png" alt="game png" />
             </div>
             <div class="promo__social">
@@ -296,36 +342,46 @@
         </section>
       </div>
       <div class="slider-item">
-        <section class="promo" id="contact">
+        <section class="promo" data-index="#4" data-section="contact" id="contact">
           <div class="container">
             <div class="promo__wrapper"></div>
             <div class="promo__box">
-              <div class="promo__title">Contact</div>
-              <p class="promo__text">
-                is third-person retrofuturism and a sea of action is third-person retrofuturism and
-                a
-              </p>
-              <a href="#contact-info" class="btn btn--promo">Contact with us</a>
-              <div id="contact-info" class="mfp-hide popup">
-                <div class="info">
-                  <h2 class="popup-title">Contact with us</h2>
-                  <div class="info-contact-box">
-                    <form>
-                      <div class="name">
-                        <input type="name" placeholder=" " />
-                        <label> Name </label>
-                      </div>
-                      <div class="email">
-                        <input type="email" placeholder=" " />
-                        <label> E-mail </label>
-                      </div>
-                      <button class="btn">Send</button>
-                    </form>
+              <div
+                class="promo__box-wrapper wow animate__animated animate__fadeInLeft"
+                data-wow-duration="1s"
+              >
+                <h2 class="promo__title">Contact</h2>
+                <p class="promo__text">
+                  is third-person retrofuturism and a sea of action is third-person retrofuturism
+                  and a
+                </p>
+                <a href="#contact-info" class="btn btn--promo">Contact with us</a>
+                <div id="contact-info" class="mfp-hide popup">
+                  <div class="info">
+                    <h2 class="popup-title">Contact with us</h2>
+                    <div class="info-contact-box">
+                      <form>
+                        <div class="name">
+                          <input type="name" placeholder=" " />
+                          <label> Name </label>
+                        </div>
+                        <div class="email">
+                          <input type="email" placeholder=" " />
+                          <label> E-mail </label>
+                        </div>
+                        <button class="btn">Send</button>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="promo-right"><img src="./images/game-screen-2.png" alt="game png" /></div>
+            <div
+              class="promo-right wow animate__animated animate__fadeInRight"
+              data-wow-duration="1s"
+            >
+              <img src="./images/game-screen-2.png" alt="game png" />
+            </div>
             <div class="promo__social">
               <a href="/">
                 <img src="./images/instagram.svg" alt="instagram img" />
@@ -343,6 +399,16 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+      integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
       integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
